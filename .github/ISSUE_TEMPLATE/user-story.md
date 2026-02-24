@@ -1,5 +1,6 @@
 ---
 name: User Story
+about: create user stories
 description: Template for creating user stories
 title: "USER STORY: <title>"
 labels: ["user-story"]
