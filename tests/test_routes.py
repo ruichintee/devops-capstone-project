@@ -150,8 +150,6 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         data = resp.get_json()
         self.assertEqual(len(data), 5)
-    
-    # ADD YOUR TEST CASES HERE ...
 
     def test_update_account(self):
         """It should Update an existing Account"""
@@ -167,6 +165,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         updated_account = resp.get_json()
         self.assertEqual(updated_account["name"], "Something Known")
+
 
     def test_method_not_allowed(self):
         """It should not allow an illegal method call"""
